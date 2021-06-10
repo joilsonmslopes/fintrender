@@ -1,0 +1,187 @@
+
+//== Header Section ::::
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    padding: 3em 0;
+    z-index: 99;
+    transition: all 300ms ease-in-out;
+    background: transparent;
+    color: #fff;
+
+    .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+
+    .logo {
+        margin: 0;
+        font-weight: 600;
+        order: 2;
+        max-width: 400px;
+        transition: all 300ms ease-in-out;
+        display: none;
+        @include respond-to-min(750){
+            display: block;
+            max-width: 160px;
+            order: 0;
+            flex-shrink: 1;
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background: #101f38;
+        transition: all .3s ease-in-out;
+        @include respond-to-min(750){
+            width: 100%;
+            height: auto;
+            position: relative;
+            top: auto;
+            right: auto;
+            background: transparent;
+        }
+        ul {
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            list-style: none;
+            display: flex;
+            margin: 80px 0 0 0;
+            padding: 0;
+
+            @include respond-to-min(750){
+                align-content: space-between;
+                justify-content: flex-start;
+                flex-direction: row;
+                margin: 0;
+            }
+
+            li {
+                margin: 0 0 20px 0;
+
+                @include respond-to-min(750){
+                    margin: 0 0 0 40px;
+                }
+
+                a {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 20px;
+                    /* identical to box height, or 143% */
+
+                    text-transform: uppercase;
+
+                    /* General / Light */
+
+                    color: #FFFFFF;
+                    &:hover{
+                        color: #75E2F8;
+                    }
+                }
+            }
+        }
+    }
+    
+    .selo-timer{
+        width: 100%;
+        max-width: 290px;
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        order: 2;
+        .counterBoy{
+            width: 100%;
+            max-width: 208px;
+            display: flex;
+            justify-content: space-between;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            .ctdw{
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                width: 25%;
+                width: auto;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 15px;
+                h1{
+                    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                    margin: 0;
+                    padding: 0;
+                    color: #fff;
+                    //font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 23px;
+                    margin-bottom: 5px;
+                    @include respond-to-min(750){
+                        font-size: 23px;
+                    }
+                }
+                span{
+                    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                    margin: 0;
+                    padding: 0;
+                    color: $azul-fin;
+                    //font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 10px;
+                    @include respond-to-min(750){
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.active {
+        background: #101F38;
+        padding: 1rem 0;
+
+        .logo {
+            color: #303030;
+            max-width: 120px;
+        }
+
+        nav {
+            ul {
+                li {
+                    a {
+                        color: #fff;
+                        &:hover{
+                            color: #75E2F8;
+                        }
+                    }
+                }
+            }
+        }
+
+        .hamb{
+            span{
+                background: #fff;
+            }
+        }
+    }
+
+    &.open{
+        nav{
+            right: 0;
+        }
+    }
+}
+//========== /Header Section

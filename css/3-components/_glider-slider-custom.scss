@@ -1,0 +1,77 @@
+//-Glider Slider
+.glider{
+}
+.glider-slide{
+    //min-width: inherit;
+}
+.glider-next, 
+.glider-prev{
+    width: 43px;
+    height: 43px;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 0px rgba(198, 188, 199, 0.3);
+    border-radius: 7px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 8px;
+    &::before{
+        width: 16px;
+        height: 10px;
+        position: absolute;
+        left: 6px;
+        top: 0;
+    }
+    &.disabled{
+        opacity: 0.2;
+    }
+    &:active{
+        margin-top: 8px;
+        box-shadow: 0px 0 0px rgba(198, 188, 199, 0.3);
+        margin-bottom: 0;
+    }
+
+    &.green{
+        background: #59B98A;
+        svg{
+            path{
+                fill: #fff;
+            }
+        }
+    }
+}
+.glider-next{
+    svg{
+        path{
+            fill: $green;
+        }
+    }
+}
+.glider-prev{
+    svg{
+        path{
+            fill: $green;
+        }
+    }
+}
+.glider-dots{
+    display: flex;
+    align-items: center;
+    .glider-dot {
+        width: 6px;
+        height: 6px;
+        background: #fff;
+        opacity: 0.3;
+        transition: all .2s ease-in-out;
+        &.active{
+            width: 12px;
+            height: 12px;
+            opacity: 1;
+        }
+    }
+
+}

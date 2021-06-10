@@ -1,0 +1,71 @@
+.accordion {
+    width: 100%;
+    max-width: 970px;
+    margin: auto;
+
+    .acc-heading {
+        align-items: center;
+        background: #F8F8FC;
+        margin-bottom: 30px;
+        padding: 0;
+        border: none;
+        display: block;
+        transition: all .2s ease-in-out;
+        cursor: default;
+        display: block;
+        padding: 11px 22px;
+
+        .header-acc {
+            transition: all .2s ease-in-out;
+            padding: 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        svg {
+            transition: all .2s ease-in-out;
+        }
+
+        &.active {
+            svg {
+                transform: rotate(180deg);
+            }
+
+            .header-acc {
+                padding: 35px 30px;
+            }
+        }
+
+        .acc-content {
+            .inner {
+                padding: 20px 30px;
+
+                p {
+                    margin: 0;
+
+                    cursor: auto;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #828687;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                }
+            }
+        }
+
+    }
+
+    .acc-content,
+    .acc-content2 {
+        margin: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+
+        .inner {
+            padding: 0 22px 22px;
+        }
+    }
+}

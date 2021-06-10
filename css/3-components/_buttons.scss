@@ -1,0 +1,37 @@
+//== Component Section ::::
+
+.btn {
+    background: rgb(117, 226, 248);
+    color: #11273E;
+    border: 0;
+    box-shadow: 0px 10px 40px -10px rgba(117, 226, 248, 0.9);
+    transform: translateY(0);
+    border-radius: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    transition: all 0.2s, transform 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 50px;
+    height: 47px;
+    font-size: 13px;
+    line-height: 47px;
+    /* identical to box height, or 177% */
+    
+    text-align: center;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    outline: none;
+    
+    color: #11273E;
+
+    &:hover {
+        background: #5cc6db;
+        box-shadow: 0px 10px 40px -15px rgba(117, 226, 248, 0.9);
+    }
+}

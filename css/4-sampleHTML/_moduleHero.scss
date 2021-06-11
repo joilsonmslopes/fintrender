@@ -47,14 +47,6 @@
           font-size: 35px;
           line-height: 45.5px;
         }
-
-        span {
-          font-size: 60px;
-
-          @include respond-to-max(559) {
-            font-size: 50px;
-          }
-        }
       }
     }
 

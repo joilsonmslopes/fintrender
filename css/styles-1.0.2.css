@@ -1217,14 +1217,7 @@ footer {
   position: relative;
   margin: 0;
   padding: 0;
-  margin-bottom: 87px;
   background: #101f38;
-}
-
-@media only screen and (min-width: 750px) {
-  footer {
-    margin-bottom: 110px;
-  }
 }
 
 footer .nav-soci {
@@ -1477,7 +1470,7 @@ footer .copy-box ul li a {
 
 @media only screen and (min-width: 750px) {
   .pageHome .copy-box {
-    padding: 20px 0px 55px 0px;
+    padding: 20px 0px 20px 0px;
   }
 }
 
@@ -1787,16 +1780,6 @@ section .subtitle {
   }
 }
 
-.moduleHero .text-content h1 span span {
-  font-size: 60px;
-}
-
-@media only screen and (max-width: 559px) {
-  .moduleHero .text-content h1 span span {
-    font-size: 50px;
-  }
-}
-
 .moduleHero .text-content p {
   width: 100%;
   max-width: 815px;
@@ -2016,7 +1999,7 @@ section .subtitle {
       -ms-flex-align: center;
           align-items: center;
   background: #101f38;
-  padding: 20px 10px;
+  padding: 50px 80px;
   -webkit-box-shadow: 0px 4px 17px rgba(117, 226, 248, 0.26);
           box-shadow: 0px 4px 17px rgba(117, 226, 248, 0.26);
 }

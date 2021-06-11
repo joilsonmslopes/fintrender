@@ -5,11 +5,7 @@ footer {
   position: relative;
   margin: 0;
   padding: 0;
-  margin-bottom: 87px;
   background: #101f38;
-  @include respond-to-min(750) {
-    margin-bottom: 110px;
-  }
 
   .nav-soci {
     width: 100%;
@@ -184,7 +180,7 @@ footer {
   padding: 20px 0px;
 
   @include respond-to-min(750) {
-    padding: 20px 0px 55px 0px;
+    padding: 20px 0px 20px 0px;
   }
 }
 

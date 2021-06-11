@@ -17,8 +17,8 @@
         top: 40px;
     }
     h1{
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 18px;
+        line-height: 30px;
         margin: 0;
         text-align: left;
         
@@ -26,8 +26,44 @@
         position: relative;
         margin-bottom: 1em;
         @include respond-to-min(750){
+            max-width: 900px;
+            text-align: center;
             font-size: 34px;
             line-height: 44px;
+            margin-bottom: 105px;
+
+            &::after {
+                content: "";
+                width: 100px;
+                height: 2px;
+                background-color: $azul-fin;
+                position: absolute;
+                bottom: -50px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        a {
+            width: 100%;
+            max-width: 160px;
+            height: 40px;
+            color: $darkblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $lightblue;
+            border-radius: 7px;
+            font-size: 9px;
+            font-weight: 700;
+            line-height: 10.97px;
+            letter-spacing: 24.5%;
         }
     }
     .step-box{
@@ -49,19 +85,32 @@
             position: absolute;
             z-index: 0;
         }
-        p{
+        h2{
             font-size: 16px;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 17px;
             line-height: 26px;
             text-align: left;
             color: #FFFFFF;
-            padding: 53px 0 0 48px;
+            padding: 33px 0 0 35px;
             position: relative;
             z-index: 1;
-
         }
+
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 26px;
+            text-align: left;
+            color: #FFFFFF;
+            padding: 13px 0 0 35px;
+            position: relative;
+            z-index: 1;
+        }
+  
+
         img{
             width: 100%;
         }
@@ -77,8 +126,8 @@
                 height: auto;
             }
         }
-        @include respond-to-min(750){
-            width: 33%;
+        @include respond-to-min(768){
+            width: 25%;
         }
     }
 }

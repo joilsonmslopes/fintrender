@@ -19,133 +19,61 @@
     padding: 0px 0 60px;
   }
 
-  .info-box {
-    width: 100%;
-    max-width: 700px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background: #101f38;
-    padding: 20px 10px;
-    box-shadow: 0px 4px 17px rgba(117, 226, 248, 0.26);
-    margin-top: 150px;
+  .text-content {
+    text-align: center;
 
-    @include respond-to-max(749) {
-      max-width: 500px;
-      margin-top: 20px;
-      flex-direction: column;
-      align-items: center;
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 19px;
+      line-height: 27.5px;
+      letter-spacing: 2.5%;
+      font-weight: 700;
+      margin-top: 120px;
 
-    }
+      @include respond-to-max(559) {
+        font-size: 16px;
+        margin-top: 20px;
+        line-height: 24.5px;
 
-    .description {
-      width: 70%;
-      max-width: 370px;
-      margin-left: 80px;
-
-      @include respond-to-max(768) {
-        width: 100%;
-        max-width: 300px;
-        margin-left: 0px;
-        padding: 0 10px;
-        flex-direction: column;
-        align-items: center;
       }
 
-      h2 {
-        font-size: 33px;
-        line-height: 46.73px;
-        letter-spacing: 1px;
-        color: $white;
-        font-family: 'Bebas Neue', cursive;
-        font-weight: 400;
+      span {
+        color: $azul-fin;
+        font-size: 45px;
+        line-height: 55.5px;
+        letter-spacing: 2.5%;
 
-        @include respond-to-max(576) {
-          font-size: 28px;
-          line-height: 36px;
+        @include respond-to-max(559) {
+          font-size: 35px;
+          line-height: 45.5px;
         }
 
         span {
-          color: $azul-fin;
-        }
-      }
+          font-size: 60px;
 
-      .list-icons {
-        display: flex;
-        flex-direction: column;
-        margin-top: 19px;
-
-        .list-icon-single {
-          display: flex;
-          margin-bottom: 13px;
-
-          span {
-            font-size: 10px;
-            line-height: 13.87px;
-            margin-left: 10px;
+          @include respond-to-max(559) {
+            font-size: 50px;
           }
         }
       }
     }
 
-    .price {
-      width: 30%;
-      max-width: 370px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-top: 18px;
+    p {
+      width: 100%;
+      max-width: 815px;
+      font-size: 19px;
+      line-height: 27.5px;
+      text-align: center;
+      letter-spacing: 2.5%;
+      font-weight: 700;
+      margin-top: 50px;
 
-      @include respond-to-max(768) {
-        width: 100%;
-        max-width: 300px;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 30px;
-        padding: 0 10px;
+      @include respond-to-max(559) {
+        font-size: 16px;
       }
 
-      h3 {
-        font-size: 0.81rem;
-        letter-spacing: 0.5px;
-        font-weight: 700;
-        position: relative;
-
-        &::after {
-          content: '';
-          width: 100%;
-          height: 2px;
-          background-color: $red;
-          position: absolute;
-          top: 8px;
-          left: 0;
-        }
-      }
-
-      h2 {
-        font-size: 1.93rem;
-        margin: 0;
-        letter-spacing: 0.5px;
-        font-weight: 700;
-      }
-
-      p {
-        font-size: 1rem;
-        letter-spacing: 0.5px;
-        font-weight: 700;
-      }
-
-      a {
-        width: 100%;
-        max-width: 162px;
-        height: 40px;
-        text-align: center;
-        background-color: $azul-fin;
-        padding: 15px;
-        color: $darkblue;
-        font-weight: 700;
-        border-radius: 10px;
-        font-size: 0.62rem;
+      span {
+        color: $azul-fin;
       }
     }
   }
@@ -206,61 +134,14 @@
   .mouse {
     width: 21px;
     height: 80px;
+    bottom: -20px;
     background: transparent;
-    position: relative;
+    position: absolute;
     //margin: auto;
     z-index: 3;
-    svg {
-      height: 115px;
-      #um {
-        animation-name: example1;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
 
-        @keyframes example1 {
-          0% {
-            transform: translate(0, 0px);
-          }
-
-          50% {
-            transform: translate(0, 10px);
-          }
-
-          100% {
-            transform: translate(0, 0px);
-          }
-        }
-      }
-      #dois {
-        animation-name: example2;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-
-        @keyframes example2 {
-          0% {
-            transform: translate(0, 0px);
-          }
-
-          50% {
-            transform: translate(0, 10px);
-          }
-
-          100% {
-            transform: translate(0, 0px);
-          }
-        }
-      }
-      line {
-        transform: translate(0, 10px);
-      }
-    }
-
-    @include respond-to-min(750) {
-      position: absolute;
-      left: 20px;
-      // left: -40px;
-      bottom: 50px;
-      right: auto;
+    @include respond-to-max(749) {
+      display: none;
     }
   }
   .social-box {

@@ -2591,18 +2591,14 @@ h2.footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 15px;
-  min-height: 206px;
-  margin-top: 15px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  padding: 25px 40px;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 768px) {
   .moduleFeature-3 .wrap .modulos-grid .cards .card-single {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-    width: 50%;
+    width: calc(50% - 15px);
   }
 }
 
@@ -2627,22 +2623,11 @@ h2.footer {
 .moduleFeature-3 .wrap .modulos-grid .cards .card-single p {
   text-align: left;
   margin-top: 20px;
-  height: 100px;
-}
-
-.moduleFeature-3 .wrap .modulos-grid .cards .card-single:nth-child(1),
-.moduleFeature-3 .wrap .modulos-grid .cards .card-single:nth-child(2) {
-  margin-top: 15px;
-}
-
-.moduleFeature-3 .wrap .modulos-grid .cards .card-single:nth-child(2),
-.moduleFeature-3 .wrap .modulos-grid .cards .card-single:nth-child(4) {
-  margin-top: 15px;
+  height: 65px;
 }
 
 .moduleFeature-3 .wrap .modulos-grid .cards .card-single:nth-child(3) {
   background-color: #75E2F8;
-  margin-top: 15px;
 }
 
 .moduleFeature-3 .wrap .modulos-grid .cards .card-single:nth-child(3) h2 {

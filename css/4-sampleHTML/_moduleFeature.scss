@@ -324,16 +324,12 @@
           flex-direction: column;
           align-items: flex-start;
           justify-content: center;
-          padding: 15px;
-          min-height: 206px;
-          margin-top: 15px;
-          transform: scale(1);
-          
-
+          padding: 25px 40px;
+          height: auto;
+          margin-bottom: 30px;
 
           @include respond-to-min(768) {
-            transform: scale(.95);
-            width: 50%;
+            width: calc(50% - 15px);
           }
 
           h2 {
@@ -357,23 +353,14 @@
           p {
             text-align: left;
             margin-top: 20px;
-            height: 100px;
+            height: 65px;
           }
         }
 
-        .card-single:nth-child(1),
-        .card-single:nth-child(2) {
-          margin-top: 15px;
-        }
 
-        .card-single:nth-child(2),
-        .card-single:nth-child(4) {
-          margin-top: 15px;
-        }
 
         .card-single:nth-child(3) {
           background-color: $azul-fin;
-          margin-top: 15px;
           
           h2 {
             color: $darkblue;

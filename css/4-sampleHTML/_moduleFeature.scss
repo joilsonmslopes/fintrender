@@ -31,9 +31,24 @@
     top: 17px;
   }
 }
+
+.moduleFeature-1.faq {
+  .wrap {
+    position: relative;
+    img {
+      width: 100%;
+      max-width: 300px;
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-25%);
+    }
+  }
+}
 //== Feature Section ::::
 .moduleFeature-2 {
   z-index: 1;
+  margin-bottom: 40px;
 
   .wrap {
     position: relative;
@@ -207,20 +222,25 @@
     position: relative;
     
     h1{
-      font-size: 22px;
-      line-height: 30px;
-      margin: 0;
+      font-size: 32px;
+      line-height: 32px;
       text-align: left;
       
       margin: 0 auto 45px;
       position: relative;
       margin-bottom: 1em;
+
+      span {
+        display: block;
+        font-size: 19px;
+        margin-top: -8px;
+      }
       @include respond-to-min(750){
           max-width: 900px;
           text-align: center;
           font-size: 34px;
           line-height: 44px;
-          margin-bottom: 105px;
+          margin-bottom: 75px;
 
           &::after {
               content: "";
@@ -228,7 +248,7 @@
               height: 2px;
               background-color: $azul-fin;
               position: absolute;
-              bottom: -50px;
+              bottom: -30px;
               left: 50%;
               transform: translateX(-50%);
           }
@@ -264,7 +284,7 @@
           flex-direction: column;
           align-items: flex-start;
           width: 100%;
-          max-width: 210px;
+          max-width: 240px;
           border-right: 1px solid rgba(224, 233, 237, 0.06);;
 
           h2 {
@@ -285,9 +305,9 @@
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          padding-left: 10px;
+          padding-left: 50px;
           width: 100%;
-          max-width: 210px;
+          max-width: 230px;
 
           h2 {
             font-size: 50px;
@@ -477,11 +497,12 @@
       color: $darkblue;
       padding: 20px 30px;
       font-size: 10px;
-      border-radius: 10px;
       margin-top: 40px;
       font-weight: 700;
       position: relative;
       z-index: 99;
+      box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
+      border-radius: 7px;
 
       @include respond-to-max(559){
         margin-top: 20px;

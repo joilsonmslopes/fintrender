@@ -59,6 +59,7 @@
       letter-spacing: 2.5%;
       font-weight: 700;
       margin-top: 50px;
+      padding: 0px 10px;
 
       @include respond-to-max(559) {
         font-size: 16px;
@@ -167,8 +168,9 @@
           height: 55px;
         }
         span {
-          transform: rotate(90deg);
+          transform: rotate(-90deg);
           display: inline-block;
+          font-size: 10px;
           width: 85px;
           position: absolute;
           text-transform: uppercase;

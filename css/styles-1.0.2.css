@@ -1390,6 +1390,7 @@ footer .footer-container .nav-footer ul li a:hover {
 footer .copy-box {
   width: 100%;
   margin: 0;
+  margin-top: 40px;
   padding: 20px 0px;
   background: #0e1c33;
 }
@@ -1789,6 +1790,7 @@ section .subtitle {
   letter-spacing: 2.5%;
   font-weight: 700;
   margin-top: 50px;
+  padding: 0px 10px;
 }
 
 @media only screen and (max-width: 559px) {
@@ -1927,9 +1929,10 @@ section .subtitle {
 }
 
 .moduleHero .social-box ul li span {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   display: inline-block;
+  font-size: 10px;
   width: 85px;
   position: absolute;
   text-transform: uppercase;
@@ -2135,9 +2138,11 @@ section .subtitle {
   padding: 15px;
   color: #101f38;
   font-weight: 700;
-  border-radius: 10px;
   font-size: 0.62rem;
   margin-top: -2px;
+  -webkit-box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
+          box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
+  border-radius: 7px;
 }
 
 h2.footer {
@@ -2189,8 +2194,23 @@ h2.footer {
   top: 17px;
 }
 
+.moduleFeature-1.faq .wrap {
+  position: relative;
+}
+
+.moduleFeature-1.faq .wrap img {
+  width: 100%;
+  max-width: 300px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+
 .moduleFeature-2 {
   z-index: 1;
+  margin-bottom: 40px;
 }
 
 .moduleFeature-2 .wrap {
@@ -2407,13 +2427,18 @@ h2.footer {
 }
 
 .moduleFeature-3 .wrap h1 {
-  font-size: 22px;
-  line-height: 30px;
-  margin: 0;
+  font-size: 32px;
+  line-height: 32px;
   text-align: left;
   margin: 0 auto 45px;
   position: relative;
   margin-bottom: 1em;
+}
+
+.moduleFeature-3 .wrap h1 span {
+  display: block;
+  font-size: 19px;
+  margin-top: -8px;
 }
 
 @media only screen and (min-width: 750px) {
@@ -2422,7 +2447,7 @@ h2.footer {
     text-align: center;
     font-size: 34px;
     line-height: 44px;
-    margin-bottom: 105px;
+    margin-bottom: 75px;
   }
   .moduleFeature-3 .wrap h1::after {
     content: "";
@@ -2430,7 +2455,7 @@ h2.footer {
     height: 2px;
     background-color: #75E2F8;
     position: absolute;
-    bottom: -50px;
+    bottom: -30px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -2486,7 +2511,7 @@ h2.footer {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
-  max-width: 210px;
+  max-width: 240px;
   border-right: 1px solid rgba(224, 233, 237, 0.06);
 }
 
@@ -2514,9 +2539,9 @@ h2.footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-left: 10px;
+  padding-left: 50px;
   width: 100%;
-  max-width: 210px;
+  max-width: 230px;
 }
 
 .moduleFeature-3 .wrap .modulos-grid .modulo-title .modulo-hora h2 {
@@ -2759,11 +2784,13 @@ h2.footer {
   color: #101f38;
   padding: 20px 30px;
   font-size: 10px;
-  border-radius: 10px;
   margin-top: 40px;
   font-weight: 700;
   position: relative;
   z-index: 99;
+  -webkit-box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
+          box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
+  border-radius: 7px;
 }
 
 @media only screen and (max-width: 559px) {
@@ -2827,6 +2854,7 @@ h2.footer {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  margin-bottom: 58px;
 }
 
 .moduleSteps-1 .button a {
@@ -2844,11 +2872,13 @@ h2.footer {
       -ms-flex-align: center;
           align-items: center;
   background-color: #61BBD1;
-  border-radius: 7px;
   font-size: 9px;
   font-weight: 700;
   line-height: 10.97px;
   letter-spacing: 24.5%;
+  -webkit-box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
+          box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
+  border-radius: 7px;
 }
 
 .moduleSteps-1 .step-box {
@@ -2929,6 +2959,165 @@ h2.footer {
   .moduleSteps-1 .step-box {
     width: 25%;
   }
+}
+
+.moduleFaq {
+  position: relative;
+  margin-top: 100px;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleFaq {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.moduleFaq .wave-faq {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.moduleFaq .box-cont {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.moduleFaq .title {
+  width: 100%;
+  height: auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 57px;
+  /* identical to box height, or 158% */
+  text-align: center;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleFaq .title {
+    font-size: 48px;
+    line-height: 57px;
+  }
+}
+
+.moduleFaq .subtitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+.moduleFaq .accordion {
+  width: 100%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 750px) {
+  .moduleFaq .accordion .col50 {
+    padding: 0;
+  }
+}
+
+.moduleFaq .accordion .acc-heading {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #132643;
+  border-radius: 0px;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+  display: block;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border: 1px solid #132643;
+  cursor: default;
+}
+
+.moduleFaq .accordion .acc-heading .header-acc {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  /* CTA & Texto */
+  color: #ffffff;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  padding: 25px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.moduleFaq .accordion .acc-heading svg {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.moduleFaq .accordion .acc-heading.active {
+  background: #132643;
+  margin-bottom: 35px;
+}
+
+.moduleFaq .accordion .acc-heading.active svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.moduleFaq .accordion .acc-heading.active .header-acc {
+  padding: 35px 30px;
+}
+
+.moduleFaq .accordion .acc-heading .acc-content .inner {
+  padding: 0;
+  padding: 20px 30px;
+}
+
+.moduleFaq .accordion .acc-heading .acc-content .inner ul {
+  margin-top: 0;
+}
+
+.moduleFaq .accordion .acc-heading .acc-content .inner li, .moduleFaq .accordion .acc-heading .acc-content .inner p {
+  margin: 0;
+  cursor: auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+  /* Complementary text */
+  color: #ffffff;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.moduleFaq .accordion .acc-heading .acc-content .inner li {
+  margin-bottom: 15px;
 }
 
 .moduleTransmissao {

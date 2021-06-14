@@ -1,0 +1,152 @@
+//== Faq Section ::::
+.moduleFaq {
+    position: relative;
+    margin-top: 100px;
+    @include respond-to-min(750){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .wave-faq{
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+    .box-cont{
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .title {
+        width: 100%;
+        height: auto;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 57px;
+        /* identical to box height, or 158% */
+        
+        text-align: center;
+        
+        color: $white;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        @include respond-to-min(750){
+            font-size: 48px;
+            line-height: 57px;
+        }
+    }
+    .subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        /* identical to box height, or 144% */
+        
+        text-align: center;
+        
+        color: $white;
+        margin-bottom: 60px;
+    }
+    
+    .accordion{
+        width: 100%;
+        //max-width: 970px;
+        margin: auto;
+        .col50{
+            @include respond-to-max(750){
+                padding: 0;
+            }
+        }
+        .acc-heading{
+            align-items: center;
+            //background: #FFFFFF;
+            background: #132643;
+            //box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 0px;
+            margin-bottom: 30px;
+            //padding: 40px;
+            padding: 0;
+            border: none;
+            display: block;
+            transition: all .2s ease-in-out;
+            border: 1px solid #132643;
+            cursor: default;
+            .header-acc{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                /* identical to box height */
+
+
+                /* CTA & Texto */
+
+                color: $white;
+                transition: all .2s ease-in-out;
+                padding: 25px 30px;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+                align-items: center;
+            }
+            svg{
+                transition: all .2s ease-in-out;
+            }
+            &.active{
+                //box-shadow: 0px 15px 60px rgba(0, 109, 174, 0.1);
+                background: #132643;
+                margin-bottom: 35px;
+                svg{
+                    transform: rotate(180deg);
+                }
+                .header-acc{
+                    padding: 35px 30px;
+                }
+            }
+            .acc-content{
+                .inner{
+                    padding: 0;
+                    padding: 20px 30px;
+                    
+                    ul {
+                        margin-top: 0;
+                    }
+
+                    li, p{
+                        margin: 0;
+                        
+                        cursor: auto;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 22px;
+                        /* or 157% */
+
+
+                        /* Complementary text */
+
+                        color: $white;
+                        letter-spacing: 0em;
+                        text-align: left;
+
+                    }
+
+                    li {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+//========== /Faq Section

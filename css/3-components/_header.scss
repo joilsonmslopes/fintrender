@@ -20,9 +20,9 @@ header {
         margin: 0;
         font-weight: 600;
         order: 2;
-        max-width: 400px;
+        max-width: 180px;
         transition: all 300ms ease-in-out;
-        display: none;
+        display: block;
         @include respond-to-min(750){
             display: block;
             max-width: 160px;

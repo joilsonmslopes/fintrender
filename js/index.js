@@ -1,14 +1,11 @@
 //== Accordion Module 1
 (function(){
   let accTitle = document.getElementsByClassName("acc-heading");
-  console.log(accTitle)
   let accContent = document.getElementsByClassName("acc-content");
-  console.log(accContent)
   let singleMode = true;
   
   for( let j=0; j<accContent.length; j++ ){
       let realHeight = accContent[j].offsetHeight;
-      console.log(realHeight)
       accContent[j].setAttribute("data-height", realHeight + "px");
       accContent[j].style.height = 0;
       accContent[j].style.overflow = 'hidden';

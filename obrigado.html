@@ -11,40 +11,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <!-- Meta para HTML puro -->
-    <title>Fintrender</title>
+    <title>Fintrender - Curso Aceleração Digital dos seus Investimentos</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=5"
     />
-    <meta name="description" content="WEBNAR FINTRENDER" />
+    <meta name="description" content="Curso Aceleração Digital dos seus Investimentos" />
     <meta name="keywords" content="Sample, HTML5, CSS3" />
 
     <!-- Meta para Publicação do Facebook -->
     <meta property="og:locale" content="pt-br" />
     <meta
       property="og:url"
-      content="https://marketplace.istoe.com.br/landingcc/?origem=MADNET_ISTOE_FINTRENDER_LEAD_MASTERCLASS"
+      content="https://marketplace.istoe.com.br/landingcc/?origem=MADNET_ISTOE_FINTRENDER_CHECKOUT_VALORFULL"
     />
     <meta property="og:title" content="Fintrender" />
     <meta property="og:site_name" content="Fintrender" />
-    <meta property="og:description" content="WEBNAR FINTRENDER" />
-    <meta property="og:image" content="imgs/placeholder-facebook-meta.jpg" />
+    <meta property="og:description" content="Curso Aceleração Digital dos seus Investimentos" />
     <meta property="og:type" content="website" />
 
     <!-- Meta para Publicação do Twitter -->
     <meta name="twitter:site" content="@Fintrender" />
     <meta name="twitter:title" content="Fintrender" />
-    <meta name="twitter:description" content="WEBNAR FINTRENDER" />
+    <meta name="twitter:description" content="Curso Aceleração Digital dos seus Investimentos" />
     <meta
       name="twitter:url"
-      content="https://marketplace.istoe.com.br/landingcc/?origem=MADNET_ISTOE_FINTRENDER_LEAD_MASTERCLASS"
+      content="https://marketplace.istoe.com.br/landingcc/?origem=MADNET_ISTOE_FINTRENDER_CHECKOUT_VALORFULL"
     />
-    <meta name="twitter:image" content="imgs/placeholder-facebook-meta.jpg" />
     <meta name="twitter:card" content="summary" />
 
     <link
       rel="canonical"
-      href="https://marketplace.istoe.com.br/landingcc/?origem=MADNET_ISTOE_FINTRENDER_LEAD_MASTERCLASS"
+      href="https://marketplace.istoe.com.br/landingcc/?origem=MADNET_ISTOE_FINTRENDER_CHECKOUT_VALORFULL"
     />
     <!-- Tag exclusiva da Home -->
     <link
@@ -68,7 +66,7 @@
 
     <meta
       http-equiv="refresh"
-      content="5; URL='https://marketplace.istoe.com.br/landingcc/?origem=MADNET_ISTOE_FINTRENDER_LIVE_MASTERCLASS'"
+      content="5; URL='https://marketplace.istoe.com.br/landingcc/?origem=MADNET_ISTOE_FINTRENDER_CHECKOUT_VALORFULL'"
     />
 
     <link rel="stylesheet" href="css/styles-1.0.2.css" />
@@ -98,33 +96,10 @@
     <![endif]-->
     <header id="header-main" class="clearfix">
       <div class="wrap">
-        <a href="?origem=MADNET_ISTOE_FINTRENDER_LEAD_MASTERCLASS" class="logo"
+        <a href="?origem=MADNET_ISTOE_FINTRENDER_CHECKOUT_VALORFULL" class="logo"
           ><img src="imgs/logo.png"
         /></a>
-        <nav>
-          <ul>
-            <li class="itemNav">
-              <a
-                class=""
-                href="?origem=MADNET_ISTOE_FINTRENDER_LIVE_MASTERCLASS"
-                >A MasterClass</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <div class="selo-timer">
-          <span>Faltam só:</span>
-          <div id="counterBoy" class="counterBoy"></div>
-        </div>
-
-        <div id="hamb" class="hamb">
-          <div class="hamb-content">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
+        
       </div>
     </header>
 
@@ -132,16 +107,12 @@
       <section id="hero-1" class="moduleHero style1">
         <div class="wrap grid">
           <div class="text-box">
-            <h1>Obrigado<br />por se cadastrar!</h1>
-            <h3 style="text-align: center">
-              Olá, você será redirecionado para<br />
-              a MasterClass!
-            </h3>
+            <h1 class="obrigado">Obrigado<br />pela compra do "Curso de <span>Aceleração</span> Digital dos seus <span>investimentos.</span>"</h1>
           </div>
 
           <div class="social-box">
             <ul>
-              <li><span>Nos Siga</span></li>
+              <li><span>SIGA A GENTE</span></li>
               <li><div class="separador"></div></li>
               <li class="facebook">
                 <a href="https://www.facebook.com/Fintrender/" target="_blank">
@@ -298,23 +269,12 @@
             <div class="logo-footer">
               <img src="imgs/logo.png" />
             </div>
-            <div class="nav-footer">
-              <ul>
-                <li class="itemNav">
-                  <a
-                    class=""
-                    href="?origem=MADNET_ISTOE_FINTRENDER_LIVE_MASTERCLASS"
-                    >A MasterClass</a
-                  >
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
 
         <div class="copy-box">
           <div class="wrap">
-            <p>Copyright © 2021 Fintrenfer. All rights reserved.</p>
+            <p>Copyright © 2021 Fintrender. All rights reserved.</p>
 
             <ul>
               <li>
@@ -330,41 +290,7 @@
       <div id="modal-backdrop" class="modal-backdrop"></div>
     </div>
 
-    <script src="js/transmissao-1.0.1.js"></script>
     <script src="js/main-1.0.1.js"></script>
-    <script>
-      (function () {
-        var headerScroll = getId('form-sticker'),
-          scrollHeight = 10,
-          classHeader = 'active';
-
-        //SCROLL
-        window.addEventListener('scroll', scrollOn);
-
-        function scrollOn() {
-          animatedScroll(headerScroll, classHeader, scrollHeight);
-        }
-
-        //Função que on scroll muda o comportamento do elemento
-        function animatedScroll(element, classN, height) {
-          y = pageYOffset; //resgata do objeto window o valor pageYOffset e guarda na variável
-          if (y > height) {
-            element.className = classN;
-          } else {
-            element.className = '';
-          }
-        }
-
-        // Função toggle adiciona ou tira a class do elemento
-        function toggle(element, classe) {
-          element.className = element.className ? '' : classe;
-        }
-
-        //Função que retorna o id do elemento
-        function getId(id) {
-          return document.getElementById(id);
-        }
-      })();
-    </script>
+    
   </body>
 </html>

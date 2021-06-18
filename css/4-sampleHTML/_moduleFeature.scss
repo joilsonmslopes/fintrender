@@ -448,7 +448,7 @@
         line-height: 24px;
         margin-top: 56px;
 
-        span {
+        a {
           font-weight: 700;
           color: $azul-fin;
         }
@@ -503,6 +503,12 @@
       z-index: 99;
       box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
       border-radius: 7px;
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #5dc8dd;
+      }
 
       @include respond-to-max(559){
         margin-top: 20px;

@@ -1,0 +1,161 @@
+.form-input.success input,
+.form-input.success select {
+    border-color: #2ecc71;
+    background-color: #2ecc7111;
+}
+
+.form-input.error input,
+.form-input.error select {
+    border-color: #e74c3c;
+    background-color: #e74c3c11;
+    margin-bottom: 12px;
+}
+
+.form-input i {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.form-input.cvvContainer i {
+    position: absolute;
+    top: 48px;
+    right: 60px;
+    visibility: hidden;
+}
+
+.form-input select ~ i {
+    position: absolute;
+    top: 48px;
+    right: 30px;
+    visibility: hidden;
+}
+
+.form-input input[type=checkbox] ~ label ~ i {
+    position: absolute;
+    top: 38px;
+    left: 30px;
+    visibility: hidden;
+}
+
+.form-input.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-input.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-input small {
+    visibility: hidden;
+    position: absolute;
+    top: 105px;
+    left: 10px;
+    font-size: 12px;
+    line-height: 95%;
+}
+
+.form-input input[type=checkbox] ~ label ~ i ~ small {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    font-size: 12px;
+    line-height: 95%;
+}
+
+.form-input.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-input.error input[type=checkbox] ~ label ~ i ~ small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+
+/*////////////   */
+
+.form-checkbox .checkbox {
+    margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 10px;
+}
+
+.form-checkbox.success input,
+.form-checkbox.success select {
+    border-color: #2ecc71;
+    background-color: #2ecc7111;
+}
+
+.form-checkbox.error input,
+.form-checkbox.error select {
+    border-color: #e74c3c;
+    background-color: #e74c3c11;
+    margin-bottom: 12px;
+    
+}
+
+.form-checkbox i {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.form-checkbox.cvvContainer i {
+    position: absolute;
+    top: 48px;
+    right: 60px;
+    visibility: hidden;
+}
+
+.form-checkbox select ~ i {
+    position: absolute;
+    top: 48px;
+    right: 30px;
+    visibility: hidden;
+}
+
+.form-checkbox.termos{
+    position: relative;
+}
+
+.form-checkbox input[type=checkbox] ~ label ~ i {
+    position: absolute;
+    top: 38px;
+    left: 30px;
+    visibility: hidden;
+}
+
+.form-checkbox.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-checkbox.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+
+
+.form-checkbox input[type=checkbox] ~ label ~ i ~ small {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    font-size: 12px;
+    line-height: 95%;
+}
+
+
+
+.form-checkbox.error input[type=checkbox] ~ label ~ i ~ small {
+    color: #e74c3c;
+    visibility: visible;
+}

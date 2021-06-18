@@ -6,6 +6,8 @@
         flex-flow: row;
         flex-wrap: wrap;
         display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .topics-box{
         width: 33.3333%;
@@ -57,7 +59,7 @@
                     }
                 }
                 a{
-                    font-family: 'Roboto Condensed';
+                    font-family: 'Montserrat';
                     font-style: normal;
                     font-weight: bold;
                     font-size: 16px;
@@ -149,7 +151,7 @@
         h3{
             outline: 0;
             margin-top: 0;
-            font-family: 'Roboto Condensed';
+            font-family: 'Montserrat';
             font-style: normal;
             font-weight: bold;
             /* or 133% */

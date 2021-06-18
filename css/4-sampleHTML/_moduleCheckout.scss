@@ -1,0 +1,463 @@
+//== Hero Section ::::
+.moduleCheckout {
+    width: 100%;
+    height: auto;
+    //float: left;
+    background-size: cover !important;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto;
+    display: flex;
+    //padding-bottom: 0;
+    //padding-top: 0;
+        
+    @include respond-to-min(750){
+        height: auto;
+        padding: 70px 0 60px;
+    }
+    .mask{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        //background: linear-gradient(0.42deg, #101F38 0.41%, rgba(16, 31, 56, 0.69) 98.8%);
+        background: linear-gradient(0.42deg, #101F38 0.41%, rgba(16, 31, 56, 0.41) 33.23%);
+        background: url("../imgs/bg_hero.jpg") no-repeat top center;
+        background-size: cover;
+        //opacity: 0.5;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        .wrap{
+            height: 100%;
+        }
+        
+        @include respond-to-min(750){
+            height: 100vh;
+            padding: 70px 0 60px;
+        }
+        .mask2{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            //background: linear-gradient(0.42deg, #101F38 0.41%, rgba(16, 31, 56, 0.69) 98.8%);
+            background: linear-gradient(0.42deg, #101F38 0.41%, rgba(16, 31, 56, 0.41) 33.23%);
+            //opacity: 0.5;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    }
+    .wrap {
+        display: flex;
+        justify-content: flex-start;
+        //align-items: center;
+        flex-direction: column;
+        position: relative;
+        
+        z-index: 1;
+        padding-top: 30px;
+        align-items: center;
+        
+        @include respond-to-min(750){
+            align-items: center;
+            justify-content: baseline;
+            padding-top: 0px;
+        }
+        h1{
+            color: #fff;
+        }
+        p{
+            color: #fff;
+        }
+    }
+    .text-box{
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 100%;
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 50px;
+            @include respond-to-min(750){
+                max-width: 200px;
+            }
+        }
+    }
+    .box{
+        width: 100%;
+        max-width: 1025px;
+        height: auto;
+        background: linear-gradient(0deg, #101F38, #101F38), #C4C4C4;
+        box-shadow: 0px 4px 17px rgba(117, 226, 248 , 0.08);
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        &:before {
+            display: none;
+            @include respond-to-min(750){
+                display: block;
+                content: "";
+                position: absolute;
+                width: 93%;
+                margin: auto;
+                height: 1px;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background: #75E2F8;
+            }
+        }
+        @include respond-to-min(750){
+            flex-wrap: nowrap;
+            padding: 0 20px;
+        }
+        .produto,
+        .preco,
+        .desconto,
+        .subtotal{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 0 20px;
+            width: 100%;
+            @include respond-to-min(750){
+                padding: 0 20px;
+                max-width: 140px;
+                flex-flow: column;
+            }
+            h5{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 133.9%;
+            }
+            p{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 16px;
+                /* identical to box height */
+                
+                letter-spacing: 0.5px;
+                text-align: right;
+                margin: 0;
+                padding: 20px 0;
+                @include respond-to-min(750){
+                    height: 90px;
+                }
+                
+            }
+        }
+        .produto{
+            max-width: 100%;
+            p{
+                font-family: Bebas Neue;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 25px;
+                line-height: 118%;
+                /* or 29px */
+
+
+                color: #FFFFFF;
+                span{
+                    color: #75E2F8;
+                }
+            }
+        }
+    }
+    form{
+        width: 100%;
+    }
+    .card-section{
+        width: calc(100%);
+        background: linear-gradient(0deg, #101F38, #101F38), #C4C4C4;
+        box-shadow: 0px 4px 17px rgba(117, 226, 248 , 0.08);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 10px;
+        border-radius: 3px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        @include respond-to-min(750) {
+            padding: 20px 30px;
+        }
+
+        h3{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: 0.025em;
+            align-items: center;
+            color: #FFFFFF;
+            padding: 0 0 20px;
+            width: calc(100%);
+            border-bottom: 1px solid #75E2F8;
+            svg{
+                margin-right: 15px;
+                path{
+                    fill: #fff;
+                }
+            }
+        }
+        .form-cont{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container-flip{
+            width: 100%;
+            padding: 10px;
+            height: 59vw;
+            @include respond-to-min(1000){
+                width: 40%;
+                order: 2;
+            }
+            svg{
+                &#cardfront,
+                &#cardback{
+                    box-shadow: 1px 5px 6px 0px #00000059;
+                }
+            }
+            .creditcard{
+                .cardBackground{
+                    //filter: url(#f1);
+                    //opacity: 0.7;
+                    border: 1px solid #fff;
+                }
+                .grey{
+                    fill: #111111;
+                }
+                .greydark{
+                    fill: #111111;
+                }
+            }
+        }
+        .form-cont{
+            @include respond-to-min(1000){
+                width: 60%;
+            }
+        }
+        .form-input{
+            width: 100%;
+            padding: 25px 10px;
+            position: relative;
+            .ccicon{
+                height: 20px;
+                bottom: 27px;
+                opacity: 0.6;
+                top: auto;
+                @include respond-to-min(1000){
+                    bottom: 37px;
+                    right: 25px;
+                    width: 40px;
+                }
+            }
+            label{
+                width: 100%;
+                display: block;
+                color: #768994;
+                
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 13px;
+
+            }
+            input,
+            select{
+                width: 100%;
+                padding: 15px 20px;
+                border: 1px solid #283957;
+                border-radius: 3px;
+                
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                color: #3C3E48;
+                margin-bottom: 7px;
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                /* identical to box height, or 119% */
+                
+                
+                
+                background: #0C172B;
+                color: #fff;
+                border: 1px solid #283957 !important;
+                padding: 15px 20px;
+                margin: 0;
+                resize: none;
+                height: 47px;
+                border-radius: 7px;
+                transition: border-color 0.1s, color 0.1s, padding 0.1s;
+                &::placeholder{
+                    color: #90A4AF;
+                }
+                &:focus{
+                    outline: none;
+                    box-shadow: inset 0px 0px 1px 0.5px #D3DCE0;
+                    border: 1px solid #D3DCE0 !important;
+                }
+            }
+            &.form-nome{
+                width: calc(100%);
+                @include respond-to-min(550){
+                    width: 50%;
+                }
+            }
+            &.form-sobrenome{
+                width: calc(100%);
+                @include respond-to-min(550){
+                    width: 50%;
+                }
+            }
+
+            &.form-cep{
+                width: calc(100%);
+                @include respond-to-min(550){
+                    width: 25%;
+                }
+            }
+            &.form-estado{
+                width: calc(100%);
+                @include respond-to-min(550){
+                    width: 25%;
+                }
+            }
+            &.form-cidade{
+                width: calc(100%);
+                @include respond-to-min(550){
+                    width: 25%;
+                }
+            }
+            &.form-bairro{
+                width: calc(100%);
+                @include respond-to-min(550){
+                    width: 25%;
+                }
+            }
+
+            &.form-rua{
+                width: calc(100%);
+                @include respond-to-min(550){
+                    width: 60%;
+                }
+            }
+
+            &.form-numero{
+                width: calc(100%);
+                @include respond-to-min(550){
+                    width: 20%;
+                }
+            }
+            &.form-comp{
+                width: calc(100%);
+                @include respond-to-min(550){
+                    width: 20%;
+                }
+            }
+            &.form-cpf{
+                width: calc(100%);
+                @include respond-to-min(550){
+                    width: calc(50%);
+                }
+            }
+            &.form-celular{
+                width: calc(100%);
+                @include respond-to-min(550){
+                    width: calc(50%);
+                }
+            }
+            &.form-email{
+                width: 100%;
+                @include respond-to-min(550){
+                    width: 50%;
+                }
+            }
+
+            &.form-nome-cartao{
+                width: calc(100%);
+                @include respond-to-min(550){
+                    width: 50%;
+                }
+            }
+            &.form-numero-cartao{
+                width: calc(100%);
+                @include respond-to-min(550){
+                    width: 50%;
+                }
+            }
+            &.form-validade{
+                width: calc(50%);
+            }
+            &.form-cvv{
+                width: calc(50%);
+            }
+        }
+    }
+    .form-cont-btn{
+        padding: 15px 20px;
+        width: calc(100%);
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        @include respond-to-min(680){
+            flex-direction: row;
+        }
+        .btn{
+            border-radius: 7px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            background: #61BBD1;
+            text-align: center;
+            letter-spacing: 0.200em;
+            color: #101F38;
+            box-shadow: 0px 10px 40px -10px rgba(117, 226, 248, 0);
+            &:hover{
+                opacity: 0.9;
+            }
+            &.grey{
+                background: #BEBEBE;
+                &:hover{
+                    opacity: 0.9;
+                }
+            } 
+        }
+    }
+    
+    .erro{
+        width: 100%;
+        display: none;
+        color: red;
+        width: 100%;
+        height: auto;
+        color: #ff3e3e;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        background: #f9c6da;
+        &.show{
+            display: block;
+        }
+
+    }
+
+
+}

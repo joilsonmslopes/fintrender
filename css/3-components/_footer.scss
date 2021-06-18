@@ -33,8 +33,13 @@ footer {
         a {
           svg {
             path {
+              transition: all 0.3s ease-in-out;
               fill: #fff;
             }
+          }
+
+          &:hover svg path {
+            fill: $azul-fin;
           }
         }
       }
@@ -44,7 +49,7 @@ footer {
   .footer-container {
     width: 100%;
     height: auto;
-    padding: 40px 0;
+    padding: 20px 0;
     .wrap {
       display: flex;
       justify-content: center;
@@ -128,7 +133,7 @@ footer {
   .copy-box {
     width: 100%;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 20px 0px;
     background: #0e1c33;
     .wrap {

@@ -1984,7 +1984,7 @@ section .subtitle {
 }
 
 #masterclass-price h1 {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 30px;
   text-align: left;
   margin: 0 auto 45px;
@@ -2031,7 +2031,7 @@ section .subtitle {
       -ms-flex-align: center;
           align-items: center;
   background: #101f38;
-  padding: 50px 80px;
+  padding: 50px 50px;
   -webkit-box-shadow: 0px 4px 17px rgba(117, 226, 248, 0.26);
           box-shadow: 0px 4px 17px rgba(117, 226, 248, 0.26);
 }

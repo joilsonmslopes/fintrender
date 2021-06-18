@@ -799,7 +799,7 @@ header.open nav {
 .btn {
   display: block;
   margin-top: 30px;
-  padding: 16px 55px;
+  padding: 16px 75px;
   text-align: center;
   background-color: #75E2F8;
   color: #101f38;
@@ -2019,7 +2019,7 @@ section .subtitle {
 
 .info-box {
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   margin: 85px auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2047,6 +2047,13 @@ section .subtitle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 50px 40px;
+  }
+}
+
+@media only screen and (max-width: 559px) {
+  .info-box {
+    padding: 50px 20px;
   }
 }
 
@@ -2106,10 +2113,6 @@ section .subtitle {
   .info-box .price {
     width: 100%;
     max-width: 400px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2174,12 +2177,9 @@ section .subtitle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  max-width: 182px;
-  height: 40px;
   text-align: center;
   background-color: #75E2F8;
-  padding: 15px;
+  padding: 16px 75px;
   color: #101f38;
   font-weight: 700;
   font-size: 10px;
@@ -2188,7 +2188,7 @@ section .subtitle {
   -webkit-box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
           box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
   border-radius: 7px;
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -2197,9 +2197,11 @@ section .subtitle {
   background-color: #5dc8dd;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 559px) {
   .info-box .price .text a {
     font-size: 9px;
+    padding: 16px 35px;
+    letter-spacing: 1.5px;
   }
 }
 

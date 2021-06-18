@@ -797,43 +797,25 @@ header.open nav {
 }
 
 .btn {
-  background: #75e2f8;
-  color: #11273E;
-  border: 0;
-  -webkit-box-shadow: 0px 10px 40px -10px rgba(117, 226, 248, 0.9);
-          box-shadow: 0px 10px 40px -10px rgba(117, 226, 248, 0.9);
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  border-radius: 40px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-  position: relative;
-  -webkit-transition: all 0.2s, -webkit-transform 0.5s;
-  transition: all 0.2s, -webkit-transform 0.5s;
-  transition: all 0.2s, transform 0.5s;
-  transition: all 0.2s, transform 0.5s, -webkit-transform 0.5s;
-  cursor: pointer;
-  font-weight: bold;
-  padding: 0 50px;
-  height: 47px;
-  font-size: 13px;
-  line-height: 47px;
-  /* identical to box height, or 177% */
+  display: block;
+  margin-top: 30px;
+  padding: 16px 55px;
   text-align: center;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  outline: none;
-  color: #11273E;
+  background-color: #75E2F8;
+  color: #101f38;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 10.97px;
+  -webkit-box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
+          box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
+  border-radius: 7px;
+  letter-spacing: 2.5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-  background: #5cc6db;
-  -webkit-box-shadow: 0px 10px 40px -15px rgba(117, 226, 248, 0.9);
-          box-shadow: 0px 10px 40px -15px rgba(117, 226, 248, 0.9);
+  background-color: #5dc8dd;
 }
 
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ | Ritto Edit */
@@ -1747,7 +1729,6 @@ section .subtitle {
 
 @media only screen and (min-width: 750px) {
   .moduleHero {
-    height: 100vh;
     padding: 0px 0 60px;
   }
 }
@@ -1756,28 +1737,41 @@ section .subtitle {
   text-align: center;
 }
 
-.moduleHero .text-content h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 39px;
-  line-height: 50.5px;
-  letter-spacing: 2.5px;
-  font-weight: 700;
-  margin-top: 120px;
+.moduleHero .text-content h2 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (min-width: 560px) {
+  .moduleHero .text-content h2 {
+    font-size: 29px;
+    margin-top: 160px;
+  }
+}
+
+.moduleHero .text-content h2.second {
+  margin-top: 0;
+}
+
+.moduleHero .text-content h1 {
+  font-size: 26px;
+}
+
+@media only screen and (min-width: 560px) {
   .moduleHero .text-content h1 {
-    font-size: 16px;
-    margin-top: 20px;
-    line-height: 24.5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 41px;
+    line-height: 50.5px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 }
 
 .moduleHero .text-content h1 span {
   color: #75E2F8;
-  font-size: 57px;
-  line-height: 55.5px;
-  letter-spacing: 2.5px;
 }
 
 @media only screen and (max-width: 559px) {
@@ -1807,42 +1801,6 @@ section .subtitle {
 
 .moduleHero .text-content p span {
   color: #75E2F8;
-}
-
-.moduleHero .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 30px;
-}
-
-.moduleHero .button a {
-  width: 100%;
-  max-width: 162px;
-  height: 40px;
-  text-align: center;
-  background-color: #75E2F8;
-  padding: 15px;
-  color: #101f38;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 10.97px;
-  -webkit-box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
-          box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
-  border-radius: 7px;
-  letter-spacing: 2.5px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.moduleHero .button a:hover {
-  background-color: #5dc8dd;
 }
 
 .moduleHero .mask {
@@ -2863,50 +2821,12 @@ h2.footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px 0 80px 0;
+  margin: 50px 0 60px 0;
 }
 
 @media only screen and (max-width: 559px) {
   .moduleFeature-4 .button {
     margin: 0 0 50px 0;
-  }
-}
-
-.moduleFeature-4 .button a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  max-width: 160px;
-  height: 40px;
-  background-color: #75E2F8;
-  color: #101f38;
-  padding: 20px 30px;
-  font-size: 10px;
-  margin-top: 40px;
-  font-weight: 700;
-  position: relative;
-  z-index: 99;
-  -webkit-box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
-          box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
-  border-radius: 7px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.moduleFeature-4 .button a:hover {
-  background-color: #5dc8dd;
-}
-
-@media only screen and (max-width: 559px) {
-  .moduleFeature-4 .button a {
-    margin-top: 20px;
   }
 }
 
@@ -2965,37 +2885,7 @@ h2.footer {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin-bottom: 58px;
-}
-
-.moduleSteps-1 .button a {
-  width: 100%;
-  max-width: 160px;
-  height: 40px;
-  color: #101f38;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #61BBD1;
-  font-size: 9px;
-  font-weight: 700;
-  line-height: 10.97px;
-  letter-spacing: 24.5%;
-  -webkit-box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
-          box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
-  border-radius: 7px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.moduleSteps-1 .button a:hover {
-  background-color: #5dc8ff;
+  margin-bottom: 30px;
 }
 
 .moduleSteps-1 .step-box {

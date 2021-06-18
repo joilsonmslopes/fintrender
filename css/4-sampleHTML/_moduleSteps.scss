@@ -49,30 +49,8 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-bottom: 58px;
+        margin-bottom: 30px;
 
-        a {
-            width: 100%;
-            max-width: 160px;
-            height: 40px;
-            color: $darkblue;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $lightblue;
-            font-size: 9px;
-            font-weight: 700;
-            line-height: 10.97px;
-            letter-spacing: 24.5%;
-            box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.13);
-            border-radius: 7px;
-
-            transition: all 0.3s ease-in-out;
-
-            &:hover {
-                background-color: #5dc8ff;
-            }
-        }
     }
     .step-box{
         width: 100%;
